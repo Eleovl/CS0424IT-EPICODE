@@ -1,0 +1,6 @@
+"root";"Aswap78122"
+"Dumbledore";"Fjsoap7800"
+"Fenix";"Ada81QlAsKL"
+"server";"192.168.3.2"
+"screenshots";"try jpeg"
+"flag";"Harry Potter2"
