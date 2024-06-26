@@ -1,0 +1,11 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-06-26 10:13 EDT
+Nmap scan report for windows (192.168.5.102)
+Host is up (0.00029s latency).
+All 1000 scanned ports on windows (192.168.5.102) are in ignored states.
+Not shown: 1000 filtered tcp ports (no-response)
+MAC Address: 08:00:27:3E:BF:5B (Oracle VirtualBox virtual NIC)
+Too many fingerprints match this host to give specific OS details
+Network Distance: 1 hop
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 823.98 seconds

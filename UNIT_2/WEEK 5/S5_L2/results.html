@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Recon-ng Reconnaissance Report</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+function showhide(id) {
+    obj = document.getElementById(id);
+    hide = document.getElementById("hide-" + id);
+    show = document.getElementById("show-" + id);
+    if (obj.style.display == "none") {
+        show.removeAttribute('style');
+        hide.removeAttribute('style');
+        obj.removeAttribute('style');
+    } else {
+        obj.style.display = "none";
+        hide.style.display = "none";
+        show.style.display = "inline";
+    }
+}
+function start() {
+    tables = document.getElementsByName("table");
+    for (i = 0; i < tables.length; ++i) {
+        showhide(tables[i].id);
+    }
+}
+</script>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .75em;
+}
+.main {
+    width: 1000px;
+    padding: 0 10px;
+    /*text-align: center;*//*centers all the elements on the page*/
+    display: table;
+    margin: 0 auto;
+    border: 2px solid gray;
+    position: relative;
+}
+.title {
+    font-size: 3em;
+}
+.subtitle {
+    font-size: 2em;
+}
+.link {
+    font-size: 1em;
+    position: absolute;
+    right: 12px;
+    top: 5px;
+}
+p {
+    margin: 5px 7px 5px 7px;
+}
+table, div {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+.container {
+    display:inline-block;
+    text-align: left; /*left justifies the table caption*/
+    border: 2px solid gray;
+    margin: 0 0 10px 0;
+    width: 100%; /*expands tables all the way across*/
+}
+table {
+    border-spacing: 10px 5px;
+    margin: -5px auto 5px auto;
+    text-align: left;
+}
+th {
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+.leak {
+    margin: 10px 0;
+}
+a[id*="-"] {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+a[id*="show-"] {
+    display: none;
+}
+.footer {
+    text-align: center;
+}
+.centered {
+    text-align: center;
+}
+</style>
+</head>
+<body onload="start();">
+    <div class="main">
+        <div class='title'>Dott. Paolo Rampino</div>
+        <div class='subtitle'>Recon-ng Reconnaissance Report</div>
+        <div class='link'><a href='http://www.recon-ng.com' target="_blank">www.recon-ng.com</a></div>
+        <hr>
+        <div>
+<!-- START -->
+<div class="container">
+<a id="show-summary" href="javascript:showhide('summary');"><p>[+] Summary</p></a>
+<a id="hide-summary" href="javascript:showhide('summary');"><p>[-] Summary</p><hr></a>
+<table id="summary">
+<tr><th>table</th><th>count</th></tr>
+<tr><td>domains</td><td class="centered">0</td></tr>
+<tr><td>companies</td><td class="centered">0</td></tr>
+<tr><td>netblocks</td><td class="centered">0</td></tr>
+<tr><td>locations</td><td class="centered">0</td></tr>
+<tr><td>vulnerabilities</td><td class="centered">0</td></tr>
+<tr><td>ports</td><td class="centered">0</td></tr>
+<tr><td>hosts</td><td class="centered">7</td></tr>
+<tr><td>contacts</td><td class="centered">1</td></tr>
+<tr><td>credentials</td><td class="centered">0</td></tr>
+<tr><td>leaks</td><td class="centered">0</td></tr>
+<tr><td>pushpins</td><td class="centered">0</td></tr>
+<tr><td>profiles</td><td class="centered">0</td></tr>
+<tr><td>repositories</td><td class="centered">0</td></tr>
+</table>
+</div><br />
+<div class="container">
+<a id="show-hosts" href="javascript:showhide('hosts');"><p>[+] Hosts</p></a>
+<a id="hide-hosts" href="javascript:showhide('hosts');"><p>[-] Hosts</p><hr></a>
+<table name="table" id="hosts">
+<tr><th>host</th><th>ip_address</th><th>region</th><th>country</th><th>latitude</th><th>longitude</th><th>notes</th><th>module</th></tr>
+<tr><td>autodiscover.datashields.tech</td><td></td><td></td><td></td><td></td><td></td><td></td><td>brute_hosts</td></tr>
+<tr><td>autodiscover.datashields.tech</td><td>153.92.2.19</td><td></td><td></td><td></td><td></td><td></td><td>brute_hosts</td></tr>
+<tr><td>autodiscover.mail.hostinger.com</td><td></td><td></td><td></td><td></td><td></td><td></td><td>brute_hosts</td></tr>
+<tr><td>connect.hostinger.com</td><td></td><td></td><td></td><td></td><td></td><td></td><td>brute_hosts</td></tr>
+<tr><td>mauriziomarcantoni.org</td><td>0.0.0.0</td><td></td><td></td><td></td><td></td><td></td><td>user_defined</td></tr>
+<tr><td>www.datashields.tech</td><td></td><td></td><td></td><td></td><td></td><td></td><td>brute_hosts</td></tr>
+<tr><td>www.datashields.tech</td><td>34.120.137.41</td><td></td><td></td><td></td><td></td><td></td><td>brute_hosts</td></tr>
+</table>
+</div><br />
+<div class="container">
+<a id="show-contacts" href="javascript:showhide('contacts');"><p>[+] Contacts</p></a>
+<a id="hide-contacts" href="javascript:showhide('contacts');"><p>[-] Contacts</p><hr></a>
+<table name="table" id="contacts">
+<tr><th>first_name</th><th>middle_name</th><th>last_name</th><th>email</th><th>title</th><th>region</th><th>country</th><th>phone</th><th>notes</th><th>module</th></tr>
+<tr><td>phb </td><td></td><td>datashields</td><td>info@datashields.com</td><td></td><td></td><td></td><td></td><td></td><td>user_defined</td></tr>
+</table>
+</div><br />
+
+<!-- END -->
+        </div>
+        <hr>
+        <p class="footer">Created by: Eleonora<br />Wed, Jun 26 2024 16:19:00</p>
+    </div>
+</body>
+</html>
