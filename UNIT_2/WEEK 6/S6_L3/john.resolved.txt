@@ -1,0 +1,7 @@
+?:password
+?:abc123
+?:charley
+?:letmein
+?:password
+
+5 password hashes cracked, 0 left
